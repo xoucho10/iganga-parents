@@ -1,5 +1,6 @@
 ﻿'use client'
 import { useState } from 'react'
+import { FadeIn, AnimatedCounter } from '@/components/Dynamic'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -18,14 +19,14 @@ export default function Alumni(){
   return (
     <main className='bg-white'>
       <Navbar/>
-      <section className='bg-[#8E24AA] text-white'>
+      <FadeIn><section className='bg-[#8E24AA] text-white'>
         <div className='max-w-7xl mx-auto px-6 py-10'>
           <h1 className='text-4xl font-black uppercase'>Alumni Wall Of Fame</h1>
           <p className='text-[13px] mt-2 opacity-80'>Click Bronze / Silver / Gold below and see LIVE how you will look after payment.</p>
         </div>
-      </section>
+      </section></FadeIn>
 
-      <section className='max-w-7xl mx-auto px-6 py-8'>
+      <FadeIn><section className='max-w-7xl mx-auto px-6 py-8'>
         <h2 className='font-black text-[#4A148C] text-center'>Choose Package - See Live Preview</h2>
 
         <div className='mt-6 grid md:grid-cols-3 gap-4'>
@@ -95,9 +96,10 @@ export default function Alumni(){
             </div>
           </div>
         </div>
-      </section>
+      </section></FadeIn>
 
       <Footer/>
     </main>
   )
 }
+

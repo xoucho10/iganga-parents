@@ -1,3 +1,5 @@
+﻿'use client'
+import { FadeIn, AnimatedCounter } from '@/components/Dynamic'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -6,10 +8,10 @@ export default function Boarding(){
     <main className='bg-white'>
       <Navbar/>
 
-      <section className='bg-[#8E24AA] text-white'>
+      <FadeIn><section className='bg-[#8E24AA] text-white'>
         <div className='max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-6'>
           <div>
-            <div className='inline-flex bg-white/15 border border-white/20 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest'>SAFE • FENCED • MATRON 24/7 • BALANCED DIET • PREP 7-10PM</div>
+            <div className='inline-flex bg-white/15 border border-white/20 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest'>SAFE â€¢ FENCED â€¢ MATRON 24/7 â€¢ BALANCED DIET â€¢ PREP 7-10PM</div>
             <h1 className='mt-3 text-4xl md:text-5xl font-black uppercase leading-[0.9]'>Boarding &<br/>Day Life</h1>
             <p className='mt-3 text-white/85 text-[13px] leading-relaxed max-w-xl'>Safe, disciplined, God-fearing boarding for boys and girls. Fenced compound with askari day & night, matron in girls dorm, warden in boys. Balanced diet, supervised prep, spiritual guidance. Day scholars welcome with lunch program.</p>
             <div className='mt-4 flex gap-2'>
@@ -27,26 +29,26 @@ export default function Boarding(){
             <div className='mt-3 text-[10px] bg-yellow-50 border border-yellow-100 p-2 rounded-lg'>Fees include: Tuition, meals, dorm, prep supervision, labs, library, sports, medical first aid. Uniform & books separate. Bursaries available.</div>
           </div>
         </div>
-      </section>
+      </section></FadeIn>
 
-      <section className='max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8'>
+      <FadeIn><section className='max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8'>
 
         <div className='md:col-span-2 space-y-8'>
           <div>
             <h2 className='text-2xl font-black text-[#4A148C]'>Our Boarding Facilities</h2>
             <div className='mt-4 grid md:grid-cols-2 gap-4'>
-              <div className='border rounded-2xl p-4'><div className='font-bold text-sm'>🏠 Boys Dormitory</div><ul className='text-[11px] mt-2 space-y-1 text-gray-600'><li>• Spacious, well-ventilated, double-decker beds</li><li>• Warden lives in compound 24/7</li><li>• Lockers for each student</li><li>• Clean toilets & showers</li></ul></div>
-              <div className='border rounded-2xl p-4'><div className='font-bold text-sm'>🏠 Girls Dormitory</div><ul className='text-[11px] mt-2 space-y-1 text-gray-600'><li>• Female matron 24/7, very strict</li><li>• Private, safe, fenced separate block</li><li>• Sanitary support, counseling</li><li>• Clean, inspected daily</li></ul></div>
-              <div className='border rounded-2xl p-4'><div className='font-bold text-sm'>🍲 Dining & Diet</div><ul className='text-[11px] mt-2 space-y-1 text-gray-600'><li>• Breakfast: Porridge, bread, tea</li><li>• Lunch: Posho, rice, beans, greens</li><li>• Supper: Posho, beans, meat twice/week</li><li>• Balanced diet, safe water</li></ul></div>
-              <div className='border rounded-2xl p-4'><div className='font-bold text-sm'>📚 Prep & Study</div><ul className='text-[11px] mt-2 space-y-1 text-gray-600'><li>• Morning prep 5am-6:30am (Cock)</li><li>• Night prep 7pm-10pm supervised</li><li>• Teachers on duty for consultation</li><li>• Weekend revision S4 & S6</li></ul></div>
+              <div className='border rounded-2xl p-4'><div className='font-bold text-sm'>ðŸ  Boys Dormitory</div><ul className='text-[11px] mt-2 space-y-1 text-gray-600'><li>â€¢ Spacious, well-ventilated, double-decker beds</li><li>â€¢ Warden lives in compound 24/7</li><li>â€¢ Lockers for each student</li><li>â€¢ Clean toilets & showers</li></ul></div>
+              <div className='border rounded-2xl p-4'><div className='font-bold text-sm'>ðŸ  Girls Dormitory</div><ul className='text-[11px] mt-2 space-y-1 text-gray-600'><li>â€¢ Female matron 24/7, very strict</li><li>â€¢ Private, safe, fenced separate block</li><li>â€¢ Sanitary support, counseling</li><li>â€¢ Clean, inspected daily</li></ul></div>
+              <div className='border rounded-2xl p-4'><div className='font-bold text-sm'>ðŸ² Dining & Diet</div><ul className='text-[11px] mt-2 space-y-1 text-gray-600'><li>â€¢ Breakfast: Porridge, bread, tea</li><li>â€¢ Lunch: Posho, rice, beans, greens</li><li>â€¢ Supper: Posho, beans, meat twice/week</li><li>â€¢ Balanced diet, safe water</li></ul></div>
+              <div className='border rounded-2xl p-4'><div className='font-bold text-sm'>ðŸ“š Prep & Study</div><ul className='text-[11px] mt-2 space-y-1 text-gray-600'><li>â€¢ Morning prep 5am-6:30am (Cock)</li><li>â€¢ Night prep 7pm-10pm supervised</li><li>â€¢ Teachers on duty for consultation</li><li>â€¢ Weekend revision S4 & S6</li></ul></div>
             </div>
           </div>
 
           <div className='bg-[#1A0A2E] text-white rounded-2xl p-6'>
             <h3 className='font-black text-[#FFEB3B]'>Boarding Rules & Discipline</h3>
             <div className='mt-3 grid md:grid-cols-2 gap-4 text-[11px] opacity-90'>
-              <ul className='space-y-1'><li>• No phones, no electronics in dorm</li><li>• Lights out 10:30pm, wake 5am</li><li>• Visiting days: Last Saturday of month</li><li>• Uniform must be clean, full time</li></ul>
-              <ul className='space-y-1'><li>• Chapel every Sunday, prayers daily</li><li>• Respect matron, warden, teachers</li><li>• No bullying, zero tolerance</li><li>• Cock, Pen, Book - discipline first</li></ul>
+              <ul className='space-y-1'><li>â€¢ No phones, no electronics in dorm</li><li>â€¢ Lights out 10:30pm, wake 5am</li><li>â€¢ Visiting days: Last Saturday of month</li><li>â€¢ Uniform must be clean, full time</li></ul>
+              <ul className='space-y-1'><li>â€¢ Chapel every Sunday, prayers daily</li><li>â€¢ Respect matron, warden, teachers</li><li>â€¢ No bullying, zero tolerance</li><li>â€¢ Cock, Pen, Book - discipline first</li></ul>
             </div>
           </div>
 
@@ -70,23 +72,23 @@ export default function Boarding(){
           <div className='bg-[#8E24AA] text-white rounded-2xl p-5'>
             <h3 className='font-bold text-[#FFEB3B] text-sm'>What to Bring - Boarding</h3>
             <ul className='text-[11px] mt-2 space-y-1 opacity-90'>
-              <li>• Mattress, blanket, 2 bedsheets</li>
-              <li>• Uniform, sports wear, casual for Sunday</li>
-              <li>• Bucket, basin, plates, cup</li>
-              <li>• Books, pens, Cock, Pen, Book spirit</li>
-              <li>• NO phone - school phone for parents</li>
+              <li>â€¢ Mattress, blanket, 2 bedsheets</li>
+              <li>â€¢ Uniform, sports wear, casual for Sunday</li>
+              <li>â€¢ Bucket, basin, plates, cup</li>
+              <li>â€¢ Books, pens, Cock, Pen, Book spirit</li>
+              <li>â€¢ NO phone - school phone for parents</li>
             </ul>
-            <a href='/admissions' className='mt-4 inline-block bg-white text-[#8E24AA] px-4 py-2 rounded-full text-[11px] font-bold'>Apply Boarding →</a>
+            <a href='/admissions' className='mt-4 inline-block bg-white text-[#8E24AA] px-4 py-2 rounded-full text-[11px] font-bold'>Apply Boarding â†’</a>
           </div>
 
           <div className='bg-[#FFFBEB] border border-yellow-100 rounded-2xl p-4'>
             <div className='font-bold text-sm'>Parent Testimony</div>
             <p className='text-[11px] italic mt-2'>My daughter is safe in girls dorm. Matron is like mother. Results improved from Div 3 to Div 1.</p>
-            <div className='text-[10px] font-bold mt-1'>— Parent, S4 Boarding, 2024</div>
+            <div className='text-[10px] font-bold mt-1'>â€” Parent, S4 Boarding, 2024</div>
           </div>
         </div>
 
-      </section>
+      </section></FadeIn>
 
       <Footer/>
     </main>

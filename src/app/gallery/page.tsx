@@ -1,5 +1,6 @@
 ﻿'use client'
 import { useState } from 'react'
+import { FadeIn, AnimatedCounter } from '@/components/Dynamic'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -23,7 +24,7 @@ export default function Gallery(){
   return (
     <main className='bg-white'>
       <Navbar/>
-      <section className='bg-[#8E24AA] text-white'>
+      <FadeIn><section className='bg-[#8E24AA] text-white'>
         <div className='max-w-7xl mx-auto px-6 py-12'>
           <h1 className='text-4xl md:text-5xl font-black uppercase'>GALLERY</h1>
           <p className='mt-2 text-white/80 text-[13px] max-w-2xl'>Iganga Parents SS - Life at IPSS - Academics, MDD, Sports, Boarding, Events.</p>
@@ -37,9 +38,9 @@ export default function Gallery(){
             <button onClick={()=>setCat("Campus")} className={cat==="Campus"? "bg-[#FFEB3B] text-black px-4 py-1.5 rounded-full text-[11px] font-bold" : "bg-white/15 border border-white/20 text-white px-4 py-1.5 rounded-full text-[11px] font-bold"}>Campus</button>
           </div>
         </div>
-      </section>
+      </section></FadeIn>
 
-      <section className='max-w-7xl mx-auto px-6 py-10'>
+      <FadeIn><section className='max-w-7xl mx-auto px-6 py-10'>
         <h3 className='font-black text-[#4A148C]'>{filtered.length} Photos - {cat}</h3>
         <div className='mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
           {filtered.map((it,i)=>(
@@ -52,8 +53,9 @@ export default function Gallery(){
             </div>
           ))}
         </div>
-      </section>
+      </section></FadeIn>
       <Footer/>
     </main>
   )
 }
+
